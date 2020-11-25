@@ -13,6 +13,7 @@ import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { TareaComponent } from './components/tarea/tarea.component';
+import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TareaComponent } from './components/tarea/tarea.component';
     AboutComponent,
     HeroesComponent,
     HeroeComponent,
-    TareaComponent
+    TareaComponent,
+    HeroeTarjetaComponent
   ],
   imports: [
     BrowserModule,

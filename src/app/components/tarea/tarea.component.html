@@ -1,21 +1,15 @@
-<h1 >Batman <small>(1939)</small></h1>
+<h1>Buscando: <small>{{termino}}</small></h1>
 <hr>
-<div class="row">
-    <div class="col-md-4">
-        <img src="assets/img/batman.png" class="img-fluid" alt="">
-        <br><br>
-        <a href="heroes" class="btn btn-outline-danger btn-block">Regresar</a>
-
-    </div>
-
-    <div class="col-md-8">
-        <h3>Batman</h3>
-        <hr>
-        <p>
-          Los rasgos principales de Batman se resumen en «destreza física, habilidades deductivas y obsesión». La mayor parte de las características básicas de los cómics han variado por las diferentes interpretaciones que le han dado al personaje.
-          </p>
-        <div>
-            <img  class="img-logo" src="assets/img/dc-logo.png" alt="">
+<div class="row" *ngIf="heroes.length == 0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            No existen resultados con el termino: {{termino}}
         </div>
     </div>
+</div>
+
+<div class="card-columns">
+    <app-heroe-tarjeta [heroe]="foo" [index]="foo.idx" *ngFor="let foo of heroes"></app-heroe-tarjeta>
+      
+      
 </div>
